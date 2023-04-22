@@ -1,9 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { Curriculum } from './Curriculum'
+import { CoreApp } from './routes/CoreApp'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Curriculum></Curriculum>
+    <CoreApp></CoreApp>
   </React.StrictMode>,
 )
