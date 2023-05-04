@@ -2,6 +2,7 @@ import '../styles/Header.scss'
 import { DATA_USER } from "../sources_api/personal_info"
 import { FaFacebookF, FaGithub, FaLinkedin } from "react-icons/fa"
 import { SideMenu } from "./SideMenu"
+import profile_1 from '../assets/images/profile_1.jpg'
 
 
 export const Header = () => {
@@ -11,7 +12,7 @@ export const Header = () => {
 
                 {/* PROFILE */}
                 <div className="profile">
-                    <img src={DATA_USER.image} alt="" className="img-fluid rounded-circle"/>
+                    <img src={profile_1} alt="" className="img-fluid rounded-circle"/>
                     <h1 className="text-light">
                         <a href="">{DATA_USER.name.split(' ')[0] + ' ' + DATA_USER.last_name.split(' ')[0] }</a>
                     </h1>

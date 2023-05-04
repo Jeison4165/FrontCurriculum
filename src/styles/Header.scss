@@ -1,3 +1,7 @@
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
 #header {
     position: fixed;
     top: 0;
@@ -8,18 +12,18 @@
     z-index: 9997;
     transition: all 0.5s;
     padding: 0 15px;
-    background: #08264d;
+    background: #040b14;
     overflow-y: auto;
-}
-
-#header .profile img {
+  }
+  
+  #header .profile img {
     margin: 15px auto;
     display: block;
     width: 120px;
-    border: 8px solid #b8bdd6;
-}
-
-#header .profile h1 {
+    border: 8px solid #2c2f3f;
+  }
+  
+  #header .profile h1 {
     font-size: 24px;
     margin: 0;
     padding: 0;
@@ -27,15 +31,15 @@
     -moz-text-align-last: center;
     text-align-last: center;
     font-family: "Poppins", sans-serif;
-}
-
-#header .profile h1 a,
-#header .profile h1 a:hover {
+  }
+  
+  #header .profile h1 a,
+  #header .profile h1 a:hover {
     color: #fff;
     text-decoration: none;
-}
-
-#header .profile .social-links a {
+  }
+  
+  #header .profile .social-links a {
     font-size: 18px;
     display: inline-block;
     background: #212431;
@@ -48,24 +52,25 @@
     width: 36px;
     height: 36px;
     transition: 0.3s;
-}
-
-#header .profile .social-links a:hover {
+  }
+  
+  #header .profile .social-links a:hover {
     background: #149ddd;
     color: #fff;
     text-decoration: none;
-}
-
-#main {
+  }
+  
+  #main {
     margin-left: 300px;
-}
-
-@media (max-width: 1199px) {
+  }
+  
+  @media (max-width: 1199px) {
     #header {
-        left: -300px;
+      left: -300px;
     }
-
+  
     #main {
-        margin-left: 0;
+      margin-left: 0;
     }
-}
+  }
+  
