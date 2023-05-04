@@ -17,7 +17,7 @@ export const Index = () => {
         <>
             <Header></Header>
             <Hero></Hero>
-            <main>
+            <main id="main">
                 <About></About>
                 <Facts></Facts>
                 <Skills></Skills>
