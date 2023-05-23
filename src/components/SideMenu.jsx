@@ -26,7 +26,7 @@ export const SideMenu = () => {
             'home': 'Home',
             'about': 'About',
             'skills': 'Skills',
-            'resume': 'Resume',
+            'resume': 'Sumary',
             'portfolio': 'Portfolio',
             'services': 'Services',
             'contact': 'Contact',
@@ -73,24 +73,10 @@ export const SideMenu = () => {
                     </a>
                 </li>
                 <li>
-                    <a href="#portfolio" className={buttonActive === 'portfolio' ? 'nav-link scrollto active': 'nav-link scrollto'}
-                        onClick={() => clickItem('portfolio')}>
-                        <i><FiBook></FiBook></i> 
-                        <span>{listButtons[language]['portfolio']}</span>
-                    </a>
-                </li>
-                <li>
                     <a href="#services" className={buttonActive === 'services' ? 'nav-link scrollto active': 'nav-link scrollto'}
                         onClick={() => clickItem('services')}>
                         <i><FiServer></FiServer></i> 
                         <span>{listButtons[language]['services']}</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#contact" className={buttonActive === 'contact' ? 'nav-link scrollto active': 'nav-link scrollto'}
-                        onClick={() => clickItem('contact')}>
-                        <i><FiMessageSquare></FiMessageSquare></i>
-                        <span>{listButtons[language]['contact']}</span>
                     </a>
                 </li>
             </ul>

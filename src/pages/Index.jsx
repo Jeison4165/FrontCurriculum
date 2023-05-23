@@ -28,10 +28,10 @@ export const Index = () => {
                 {/* <Facts></Facts> */}
                 <Skills></Skills>
                 <Resume></Resume>
-                <Portfolio></Portfolio>
+                {/* <Portfolio></Portfolio> */}
                 <Services></Services>
-                <Testimonials></Testimonials>
-                <Contact></Contact>
+                {/* <Testimonials></Testimonials>
+                <Contact></Contact> */}
             </main>
             {/* <Footer></Footer> */}
             <BackTop></BackTop>

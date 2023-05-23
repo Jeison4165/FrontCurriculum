@@ -1,3 +1,6 @@
+import { FiServer } from "react-icons/fi";
+
+
 export const DATA_USER =  {
     name: "Jeison Fabian",
     last_name: "Castillo Benitez",
@@ -97,4 +100,115 @@ export const DATA_USER =  {
             ],
         },
     ],
+    education:[
+        {
+            title: {
+                'en': 'SYSTEMS ENGINEER',
+                'es': 'INGENIERO DE SISTEMAS'
+            },
+            date: "2016-2021",
+            school: "Fundación Universitaria de San Gil - UNISANGIL",
+            place: "Chiquinquirá - Boyaca"
+        },
+        {
+            title: {
+                'en': 'SYSTEM TECHNIQUE',
+                'es': 'TÉCNICO DE SISTEMAS'
+            },
+            date: "2015",
+            school: "Centro Industrial de Mantenimiento y Manufactura SENA",
+            place: "Chiquinquirá - Boyaca"
+        },
+        {
+            title: {
+                'en': 'HIGH SCHOOL',
+                'es': 'BACHILLER ACADÉMICO'
+            },
+            date: "2014",
+            school: "Normal Superior Sor Josefa del Castillo y Guevara",
+            place: "Chiquinquirá - Boyaca"
+        }
+    ],
+    experience: [
+        {
+            title: {
+                'en': 'DEVELOPER FRONTEND / BACKEND',
+                'es': 'DESARROLLADOR FRONTEND / BACKEND'
+            },
+            date: "2020 - Present",
+            company: "International Data and Information Consulting",
+            task:[
+                {
+                    name:{
+                        'en':'Backend developer (Django, Django Rest Framework)',
+                        'es':'Desarrollador Backend (Django, Django Rest Framework)',
+                    },
+                },
+                {
+                    name:{
+                        'en':'Frontend developer (React)',
+                        'es':'Desarrollador Frontend (React)',
+                    },
+                },
+                {
+                    name:{
+                        'en':'Design and Administration of Databases',
+                        'es':'Diseño y Administración de Bases de Datos',
+                    },
+                },
+                {
+                    name:{
+                        'en':'Server Administrator (Application Deployment)',
+                        'es':'Administrador de servidores (Despliegue de aplicaciones)',
+                    },
+                }
+            ]
+        }
+    ],
+    services:[
+        {
+            name:{
+                'en':'Web applications development',
+                'es':'Desarrollo de aplicaciones web'
+            },
+            description: {
+                'en': 'Design, development and maintenance of custom web applications, using technologies such as HTML, CSS, JavaScript, and frameworks such as React.',
+                'es': 'Diseño, desarrollo y mantenimiento de aplicaciones web personalizadas, utilizando tecnologías como HTML, CSS, JavaScript, y frameworks como React. '
+            },
+            order: 1, 
+        },
+        {
+            name:{
+                'en':'Custom software development',
+                'es':'Desarrollo de software a medida'
+            },
+            description: {
+                'en': 'Creation of customized software according to the specific needs of clients. This involves requirements analysis, architecture design, coding, testing and deployment of the solution for either desktop/mobile or web.',
+                'es': 'Creación de software personalizado según las necesidades específicas de los clientes. Esto implica el análisis de requisitos, diseño de la arquitectura, codificación, pruebas y despliegue de la solución sea para equipos de escritorio/moviles o web. '
+            },
+            order: 2, 
+        },
+        {
+            name:{
+                'en':'Database development',
+                'es':'Desarrollo de bases de datos'
+            },
+            description: {
+                'en': 'Design and development of efficient and scalable databases, using technologies such as mySQL and PostgreSQL. This includes data modeling, optimized query creation, and database administration.',
+                'es': 'Diseño y desarrollo de bases de datos eficientes y escalables, utilizando tecnologías como mySQL y PostgreSQL. Esto incluye el modelado de datos, creación de consultas optimizadas y administración de bases de datos. '
+            },
+            order: 3, 
+        },
+        {
+            name:{
+                'en':'Performance optimization',
+                'es':'Optimización de rendimiento'
+            },
+            description: {
+                'en': 'Improved performance and efficiency of existing IT systems. This involves bottleneck analysis, query optimization, implementation of caching techniques, among others.',
+                'es': 'Mejora del rendimiento y la eficiencia de los sistemas informáticos existentes. Esto implica el análisis de cuellos de botella, la optimización de consultas, la implementación de técnicas de almacenamiento en caché, entre otros. '
+            },
+            order: 4, 
+        },
+    ]
 }
