@@ -1,71 +1,41 @@
+import { useContext } from 'react'
 import '../styles/Skills.scss'
+import { LanguageContext } from '../context/LanguageContext'
+import { FiTag } from 'react-icons/fi'
+import { DATA_USER } from "../sources_api/personal_info"
 
 export const Skills = () => {
-  return (
-    <section id="skills" className="skills section-bg">
-      <div className="container">
+	// LANGUAGE
+	const {language} = useContext(LanguageContext)
 
-        <div className="section-title">
-          <h2>Skills</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-        </div>
+	return (
+		<section id="skills" className="skills section-bg">
+			<div className="container">
+				<div className="section-title">
+					<h2>
+						<i><FiTag/></i> 
+						{language === 'es' ? 'Habilidades': 'Skills'}
+					</h2>
+				</div>
 
-        <div className="row skills-content">
-
-          <div className="col-lg-6" data-aos="fade-up">
-
-            <div className="progress">
-              <span className="skill">HTML <i className="val">100%</i></span>
-              <div className="progress-bar-wrap">
-                <div className="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div className="progress">
-              <span className="skill">CSS <i className="val">90%</i></span>
-              <div className="progress-bar-wrap">
-                <div className="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div className="progress">
-              <span className="skill">JavaScript <i className="val">75%</i></span>
-              <div className="progress-bar-wrap">
-                <div className="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-          </div>
-
-          <div className="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-
-            <div className="progress">
-              <span className="skill">PHP <i className="val">80%</i></span>
-              <div className="progress-bar-wrap">
-                <div className="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div className="progress">
-              <span className="skill">WordPress/CMS <i className="val">90%</i></span>
-              <div className="progress-bar-wrap">
-                <div className="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div className="progress">
-              <span className="skill">Photoshop <i className="val">55%</i></span>
-              <div className="progress-bar-wrap">
-                <div className="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
-  )
+				<div className="row skills-content">
+					{DATA_USER.skills.map( (data_category, index) => (
+						<>
+							<h3 key={data_category.id}>{data_category.name[language]}</h3>
+							{data_category.items.map( (data_item, index_item) => (
+								<div key = {data_category.id + index + index_item} className="col-lg-3" data-aos="fade-up">
+									<div className="progress">
+										<span className="skill">{data_item.name}<i className="val">{data_item.value}%</i></span>
+										<div className="progress-bar-wrap">
+											<div className="progress-bar" role="progressbar" style={{'width' : data_item.value + '%'}} aria-valuenow={data_item.value} aria-valuemin="0" aria-valuemax="100"></div>
+										</div>
+									</div>
+								</div>
+							))}
+						</>
+					))}
+				</div>
+			</div>
+		</section>
+	)
 }

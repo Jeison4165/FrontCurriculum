@@ -26,26 +26,75 @@ export const DATA_USER =  {
             "In addition to my technical background, I also have strong interpersonal skills, which has allowed me to collaborate effectively with different multidisciplinary teams."
         ],
     },
-    skills:{
-        'Operating Systems':[
-            {'Windows': 95},
-            {'Linux': 90},
-            {'MacOs':90}
-        ],
-        'Programming languages':[
-            {'Python': 95},
-            {'Java': 90},
-            {'C++':60},
-            {'Javascript':90},
-        ],
-        'Labeling and markup languages':[
-            {'HTML 5': 95},
-            {'Css': 90},
-        ],
-        'Database management':[
-            {'MySQL': 90},
-            {'PostgreSQL': 90},
-        ],
-
-    }
+    skills: [
+        {
+            id: 1,
+            name: {
+                'es': 'Sistemas Operativos',
+                'en': 'Operating Systems'
+            },
+            items:[
+                {name:'Windows', value: 95},
+                {name:'Linux', value: 90},
+                {name:'MacOs', value: 90},
+            ],
+        },
+        {   
+            id: 2,
+            name: {
+                'es': 'Lenguajes de programación',
+                'en': 'Programming languages'
+            },
+            items:[
+                {name:'Python', value: 95},
+                {name:'Java', value: 90},
+                {name:'C++', value: 60},
+                {name:'Javascript', value: 90},
+            ],
+        },
+        {
+            id: 3,
+            name: {
+                'es': 'Lenguajes de etiquetado y marcado',
+                'en': 'Labeling and markup languages'
+            },
+            items:[
+                {name:'HTML 5', value: 95},
+                {name:'Css', value: 90},
+            ],
+        },
+        {
+            id: 4,
+            name: {
+                'es': 'Manejo de base de datos',
+                'en': 'Database management'
+            },
+            items:[
+                {name:'MySQL', value: 90},
+                {name:'PostgreSQL', value: 90},
+            ],
+        },
+        {
+            id: 5,
+            name: {
+                'es': 'Control de Versiones',
+                'en': 'Version Control'
+            },
+            items:[
+                {name:'Github', value: 90},
+            ],
+        },
+        {   
+            id:6,
+            name: {
+                'es': 'Frameworks de Desarrollo',
+                'en': 'Development Frameworks'
+            },
+            items:[
+                {name:'Django', value: 90},
+                {name:'Django Rest', value: 90},
+                {name:'React', value: 90},
+            ],
+        },
+    ],
 }

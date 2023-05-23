@@ -1,6 +1,6 @@
 import { useContext, useState } from 'react';
 import '../styles/SideMenu.scss'
-import { FiBook, FiBookmark, FiHome, FiMessageSquare, FiServer, FiUser } from "react-icons/fi";
+import { FiBarChart2, FiBook, FiBookmark, FiHome, FiMessageSquare, FiServer, FiTag, FiUser } from "react-icons/fi";
 import { ButtonSideContext } from '../context/ButtonSideContext';
 import { LanguageContext } from '../context/LanguageContext';
 
@@ -16,6 +16,7 @@ export const SideMenu = () => {
         'es':{
             'home': 'Inicio',
             'about': 'Sobre mí',
+            'skills': 'Habilidades',
             'resume': 'Resumen',
             'portfolio': 'Portafolio',
             'services': 'Servicios',
@@ -24,6 +25,7 @@ export const SideMenu = () => {
         'en':{
             'home': 'Home',
             'about': 'About',
+            'skills': 'Skills',
             'resume': 'Resume',
             'portfolio': 'Portfolio',
             'services': 'Services',
@@ -44,7 +46,7 @@ export const SideMenu = () => {
                     <a href="#start" className={buttonActive === 'start' ? 'nav-link scrollto active': 'nav-link scrollto'}
                     onClick={() => clickItem('start')}>
                         <i>
-                            <FiHome></FiHome>
+                            <FiHome/>
                         </i>
                         <span>{listButtons[language]['home']}</span>
                     </a>
@@ -52,8 +54,15 @@ export const SideMenu = () => {
                 <li>
                     <a href="#about" className={buttonActive === 'about' ? 'nav-link scrollto active': 'nav-link scrollto'}
                     onClick={() => clickItem('about')}>
-                        <i><FiUser></FiUser></i> 
+                        <i><FiUser/></i> 
                         <span>{listButtons[language]['about']}</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#skills" className={buttonActive === 'skills' ? 'nav-link scrollto active': 'nav-link scrollto'}
+                    onClick={() => clickItem('skills')}>
+                        <i><FiTag/></i> 
+                        <span>{listButtons[language]['skills']}</span>
                     </a>
                 </li>
                 <li>
