@@ -20,5 +20,27 @@ export const DATA_USER =  {
         "Poseo conocimientos sólidos en diversas tecnologías y lenguajes de programación y disposición para aprender nuevas tecnologías que permitan un desarrollo más eficaz y eficiente. ",
         "Mi experiencia abarca el ciclo completo de desarrollo de software, desde la fase de diseño hasta la implementación y el mantenimiento.",
         "Además de mi experiencia técnica, también tengo habilidades interpersonales sólidas, lo que me ha permitido colaborar eficazmente con diferentes equipos multidisciplinarios.",
-    ]
+    ],
+    skills:{
+        'Operating Systems':[
+            {'Windows': 95},
+            {'Linux': 90},
+            {'MacOs':90}
+        ],
+        'Programming languages':[
+            {'Python': 95},
+            {'Java': 90},
+            {'C++':60},
+            {'Javascript':90},
+        ],
+        'Labeling and markup languages':[
+            {'HTML 5': 95},
+            {'Css': 90},
+        ],
+        'Database management':[
+            {'MySQL': 90},
+            {'PostgreSQL': 90},
+        ],
+
+    }
 }
