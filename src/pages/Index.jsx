@@ -24,7 +24,7 @@ export const Index = () => {
             <Hero></Hero>
             <main id="main">
                 <About></About>
-                <Facts></Facts>
+                {/* <Facts></Facts> */}
                 <Skills></Skills>
                 <Resume></Resume>
                 <Portfolio></Portfolio>
