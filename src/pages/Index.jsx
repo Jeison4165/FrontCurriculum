@@ -11,11 +11,16 @@ import { Testimonials } from '../components/Testimonials'
 import { Contact } from '../components/Contact'
 import { Footer } from '../components/Footer'
 import { BackTop } from '../components/BackTop'
+import { MobileNavToggle } from '../components/MobileNavToggle'
+import { ButtonSideProvider } from '../context/ButtonSideContext'
 
 export const Index = () => {
     return (
         <>
-            <Header></Header>
+            <ButtonSideProvider>
+                <MobileNavToggle></MobileNavToggle>
+                <Header></Header>
+            </ButtonSideProvider>
             <Hero></Hero>
             <main id="main">
                 <About></About>
@@ -27,9 +32,8 @@ export const Index = () => {
                 <Testimonials></Testimonials>
                 <Contact></Contact>
             </main>
-            <Footer></Footer>
+            {/* <Footer></Footer> */}
             <BackTop></BackTop>
-
         </>
     )
 }

@@ -1,3 +1,4 @@
+@import 'variables';
 
 /*--------------------------------------------------------------
 # Header
@@ -12,37 +13,40 @@
     z-index: 9997;
     transition: all 0.5s;
     padding: 0 15px;
-    background: #040b14;
+    background: $BACKGROUND_NAV;
     overflow-y: auto;
   }
   
   #header .profile img {
-    margin: 15px auto;
+    margin: 10px auto;
     display: block;
-    width: 120px;
-    border: 8px solid #2c2f3f;
+    width: 100px;
+    border: 5px solid $BORDER_PROFILE_PHOTO;
   }
   
   #header .profile h1 {
-    font-size: 24px;
+    font-size: 35px;
     margin: 0;
     padding: 0;
     font-weight: 600;
     -moz-text-align-last: center;
     text-align-last: center;
-    font-family: "Poppins", sans-serif;
+    font-family: 'League Spartan', sans-serif;
   }
   
-  #header .profile h1 a,
+  #header .profile h1 a{
+    color: #222831;
+    text-decoration: none;
+  }
+
   #header .profile h1 a:hover {
-    color: #fff;
+    color: #00ADB5;
     text-decoration: none;
   }
   
   #header .profile .social-links a {
     font-size: 18px;
     display: inline-block;
-    background: #212431;
     color: #fff;
     line-height: 1;
     padding: 8px 0;
@@ -52,6 +56,31 @@
     width: 36px;
     height: 36px;
     transition: 0.3s;
+    background-color: white;
+  }
+
+  .facebook{
+    svg{
+      color: #3b5998;
+    }
+  }
+
+  .whatsapp{
+    svg{
+      color: #075E54;
+    }
+  }
+
+  .github{
+    svg{
+      color: #171515;
+    }
+  }
+
+  .linkedin{
+    svg{
+      color: #0072b1;
+    }
   }
   
   #header .profile .social-links a:hover {
