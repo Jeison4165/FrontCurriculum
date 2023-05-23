@@ -22,7 +22,9 @@ export const Resume = () => {
 
 			<div className="row">
 				<div className="col-lg-6" data-aos="fade-up">
-					<h3 className="resume-title">Education</h3>
+					<h3 className="resume-title">
+						{language === 'es' ? 'Educación': 'Education'}
+					</h3>
 					{DATA_USER.education.map( (data_education, index_education) => (
 						<div key={data_education.date + index_education } className="resume-item">
 							<h4>{data_education.title[language]}</h4>
@@ -34,7 +36,10 @@ export const Resume = () => {
 					))}
 				</div>
 				<div className="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-					<h3 className="resume-title">Professional Experience</h3>
+					<h3 className="resume-title"></h3>
+					<h3 className="resume-title">
+						{language === 'es' ? 'Experiencia Profesional': 'Professional Experience'}
+					</h3>
 					{DATA_USER.experience.map( (data_experience, index_experience) => (
 						<div key={index_experience} className="resume-item">
 							<h4>{data_experience.title[language]}</h4>

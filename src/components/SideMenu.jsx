@@ -37,6 +37,7 @@ export const SideMenu = () => {
         document.body.classList.remove('mobile-nav-active')
         setButtonActive(value)
         setVisible((prev) => (!prev))
+        scrollto('#' + value)
     }
 
     return (

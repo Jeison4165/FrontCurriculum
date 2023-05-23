@@ -12,7 +12,7 @@ export const Hero = () => {
     // LIST WORDS
     const [listWords, setListWords] = useState(
         {'es':['Desarrollador...', 'Desarrollador Backend', 'Desarrollador Frontend', 'Design/Admin de Base de Datos'],
-        'en':['Developer...', 'Developer Backend', 'Developer Frontend', 'DB Administrator']}
+        'en':['Developer...', 'Developer Backend', 'Developer Frontend', 'Design/Admin DB Administrator']}
     )
 
     return (
@@ -26,7 +26,7 @@ export const Hero = () => {
                     <img src={profile_3} alt="" className="img-fluid rounded"/>
                 </div>
                 <h1>{language === 'es' ?  "Soy ":"I'm "}</h1>
-                <h1>
+                <h1 className='rotate-description'>
                         <span className="typed">
                                 {language === 'es' ?
                                     <Typed
