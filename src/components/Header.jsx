@@ -2,7 +2,6 @@ import '../styles/Header.scss'
 import { DATA_USER } from "../sources_api/personal_info"
 import { FaFacebookF, FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa"
 import { SideMenu } from "./SideMenu"
-import profile_1 from '../assets/images/profile_1.jpg'
 import profile_3 from '../assets/images/profile_3.jpg'
 
 
