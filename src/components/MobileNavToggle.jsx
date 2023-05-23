@@ -1,6 +1,6 @@
-import { FiMenu, FiX } from 'react-icons/fi'
 import '../styles/SideMenu.scss'
-import { useContext, useState } from 'react'
+import { FiMenu, FiX } from 'react-icons/fi'
+import { useContext } from 'react'
 import { ButtonSideContext } from '../context/ButtonSideContext'
 
 export const MobileNavToggle = () => {
@@ -12,7 +12,7 @@ export const MobileNavToggle = () => {
     }
 
     return (
-        <i class="mobile-nav-toggle d-xl-none" onClick={showCanvas}>
+        <i className="mobile-nav-toggle d-xl-none" onClick={showCanvas}>
             {visible ? <FiMenu/>: <FiX/>}
         </i>
     )

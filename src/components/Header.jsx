@@ -18,16 +18,16 @@ export const Header = () => {
                         <a href="">{DATA_USER.name.split(' ')[0] + ' ' + DATA_USER.last_name.split(' ')[0] }</a>
                     </h1>
                     <div className="social-links mt-3 text-center">
-                        <a className='facebook' href={DATA_USER.social_networks.facebook} target="_blank" >
+                        <a className='facebook' href={DATA_USER.social_networks.facebook} rel="noreferrer" target="_blank" >
                             <FaFacebookF></FaFacebookF>
                         </a>
-                        <a className='whatsapp' href={DATA_USER.social_networks.whatsapp} target="_blank">
+                        <a className='whatsapp' href={DATA_USER.social_networks.whatsapp} rel="noreferrer" target="_blank">
                             <FaWhatsapp></FaWhatsapp    >
                         </a>
-                        <a className='github' href={DATA_USER.social_networks.github} target="_blank">
+                        <a className='github' href={DATA_USER.social_networks.github} rel="noreferrer" target="_blank">
                             <FaGithub></FaGithub>
                         </a>
-                        <a className='linkedin' href={DATA_USER.social_networks.linkedin} target="_blank">
+                        <a className='linkedin' href={DATA_USER.social_networks.linkedin} rel="noreferrer" target="_blank">
                             <FaLinkedin></FaLinkedin>
                         </a>
                         

@@ -1,0 +1,38 @@
+@import 'variables';
+
+.button-language {
+    position: fixed;
+    right: 15px;
+    top: 15px;
+    z-index: 9998;
+    border: 0;
+    font-size: 24px;
+    transition: all 0.4s;
+    outline: none !important;
+    background-color: $BASE_2;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 0;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.button-language i {
+    font-size: 28px;
+    color: #fff;
+    line-height: 0;
+}
+
+.button-language:hover {
+    background: #2eafec;
+    color: #fff;
+}
+
+// .button-language.active {
+//     visibility: visible;
+//     opacity: 1;
+// }
