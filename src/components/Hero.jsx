@@ -1,6 +1,6 @@
 import '../styles/Hero.scss'
 import Typed from 'react-typed';
-import profile_3 from '../assets/images/profile_3.jpg'
+import profile_4 from '../assets/images/profile_4.jpg'
 import { DATA_USER } from "../sources_api/personal_info"
 import { useContext, useState } from 'react';
 import { LanguageContext } from '../context/LanguageContext';
@@ -23,7 +23,7 @@ export const Hero = () => {
                     <h2 className='text-center'>
                         {DATA_USER.name.split(' ')[0] + ' ' + DATA_USER.last_name.split(' ')[0] }
                     </h2>
-                    <img src={profile_3} alt="" className="img-fluid rounded"/>
+                    <img src={profile_4} alt="" className="img-fluid rounded"/>
                 </div>
                 <h1>{language === 'es' ?  "Soy ":"I'm "}</h1>
                 <h1 className='rotate-description'>
