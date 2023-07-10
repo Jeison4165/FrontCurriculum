@@ -7,7 +7,7 @@ export const CoreApp = () => {
     return (
         <BrowserRouter>
             <Routes>
-                <Route path='/' element={<Index />}></Route>
+                <Route path='/FrontCurriculum/' element={<Index />}></Route>
                 <Route path='*' element={<Error404 />}></Route>
             </Routes>
         </BrowserRouter>
