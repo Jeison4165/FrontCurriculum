@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client'
 import { CoreApp } from './routes/CoreApp'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
+  // <React.StrictMode>
     <CoreApp></CoreApp>
-  </React.StrictMode>,
+  // </React.StrictMode>,
 )
