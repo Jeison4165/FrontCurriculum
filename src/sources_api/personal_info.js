@@ -10,6 +10,7 @@ export const DATA_USER =  {
         facebook: 'https://www.facebook.com/jeisoncastillo97/',
         github: 'https://github.com/Jeison4165',
         linkedin: 'https://www.linkedin.com/in/jeison-castillo-benitez-431967171/',
+        pdf: 'https://drive.google.com/file/d/1AI7p7r-otFw32rsh3VHLK62e3sv4ZPMv/view?usp=sharing',
         whatsapp: 'https://api.whatsapp.com/send?phone=573125951934&text=Hola,%20he%20visto%20t%C3%BA%20p%C3%A1gina%20web%20y%20quisiera%20contactar%20contigo.'
     },
     birthdate: "8 Nov 1997",

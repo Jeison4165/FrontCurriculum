@@ -17,9 +17,9 @@ export const Header = () => {
                         <a href="">{DATA_USER.name.split(' ')[0] + ' ' + DATA_USER.last_name.split(' ')[0] }</a>
                     </h1>
                     <div className="social-links mt-3 text-center">
-                        <a className='facebook' href={DATA_USER.social_networks.facebook} rel="noreferrer" target="_blank" >
+                        {/* <a className='facebook' href={DATA_USER.social_networks.facebook} rel="noreferrer" target="_blank" >
                             <FaFacebookF></FaFacebookF>
-                        </a>
+                        </a> */}
                         <a className='whatsapp' href={DATA_USER.social_networks.whatsapp} rel="noreferrer" target="_blank">
                             <FaWhatsapp></FaWhatsapp    >
                         </a>
@@ -29,7 +29,7 @@ export const Header = () => {
                         <a className='linkedin' href={DATA_USER.social_networks.linkedin} rel="noreferrer" target="_blank">
                             <FaLinkedin></FaLinkedin>
                         </a>
-                        <a className='pdf' href={DATA_USER.social_networks.linkedin} rel="noreferrer" target="_blank">
+                        <a className='pdf' href={DATA_USER.social_networks.pdf} rel="noreferrer" target="_blank">
                             <FaFilePdf></FaFilePdf>
                         </a>
                     </div>
